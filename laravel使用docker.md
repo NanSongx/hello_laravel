@@ -23,3 +23,16 @@ Linux命令
 挂载项目文件
 
 ![image-20230412123059499](/Users/nansongx/Library/Application Support/typora-user-images/image-20230412123059499.png)
+
+
+
+
+
+# 启动
+
+> 生成appkey
+>
+> php artisan key:generate --show
+
+
+
