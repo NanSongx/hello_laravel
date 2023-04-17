@@ -34,11 +34,14 @@ Linux命令
 >
 > php artisan key:generate --show
 >
-> 
-> 
-> 
+> // 创建模型的同时，创建迁移文件
+> php artisan make:model Article -m
+>
+>
+>
+>
 
-## git 
+## git
 ```shell
 撤销“已经提交到本地仓库的文件”的追踪
 当一个文件（例如hello.txt）已经提交到本地仓库时。后续你再往.gitignore添加它，也不会起作用。怎么解除这种追踪呢？最常见的做法是直接删除这个文件，流程是：本地删除，提交删除这个commit到仓库。
