@@ -36,3 +36,8 @@ Linux命令
 
 
 
+一直运行 npm
+```shell
+npm run watch-poll
+```
+
