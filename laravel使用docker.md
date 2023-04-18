@@ -6,7 +6,10 @@
 2. php artisan sail:install // 初始化 sail
 3. php artisan sail:publish
 
-
+NPM运行
+```shell
+npm run watch-poll
+```
 
 
 
@@ -60,6 +63,10 @@ Use this option to unstage and remove paths only from the index. Working tree fi
 执行 clean 命令，放弃所有文件修改：
 git merge filling-layout-stylegit clean -df
 ```
+
+
+
+
 
 
 
