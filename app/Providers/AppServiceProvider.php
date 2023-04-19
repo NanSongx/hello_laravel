@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Illuminate\Pagination\Paginator::useBootstrap();
         // 本地记录sql
         if ($this->app->environment() !== 'production') {
             DB::listen(
