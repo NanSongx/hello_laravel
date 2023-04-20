@@ -12,6 +12,14 @@ use Carbon\Carbon;
 
 class PasswordController extends Controller
 {
+    public function __construct()
+    {
+        // 一分钟内只能允许访问两次
+        $this->middleware('throttle:3,10', [
+            'only' => ['sendResetLinkEmail']
+        ]);
+    }
+
     //
     public function showLinkRequestForm()
     {
