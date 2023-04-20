@@ -15,7 +15,7 @@ class PasswordController extends Controller
     public function __construct()
     {
         // 一分钟内只能允许访问两次
-        $this->middleware('throttle:3,10', [
+        $this->middleware('throttle:30,1', [
             'only' => ['sendResetLinkEmail']
         ]);
     }
@@ -72,7 +72,7 @@ class PasswordController extends Controller
         $request->validate([
             'token' => 'required',
             'email' => 'required|email',
-            'password' => 'required|confirmed|min:8',
+            'password' => 'required|confirmed|min:6',
         ]);
         $email = $request->email;
         $token = $request->token;
